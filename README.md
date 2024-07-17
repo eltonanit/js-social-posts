@@ -11,3 +11,15 @@ P.S. Occhio al nome della repo! Ricordatevi che deve essere js-social-posts!
 2. Gestire l'assenza dell'immagine profilo con un elemento di fallback che contiene le iniziali dell'utente (es. Luca Formicola > LF).
 3. Al click su un pulsante "Mi Piace" di un post, se abbiamo già cliccato dobbiamo decrementare il contatore e cambiare il colore del bottone.
 
+ 
+
+
+1- Utilizzo html markup con i continer vuoti 
+2-Utilizzo il css fornito per stilizzzare la pagina
+3-Utilizzo l'array dei post con le informazioni 
+4- Genero del markup per i post cona funzione sui JS  
+5- Formatto la data con una funzione
+6- Funzione per inserire i post
+7-Funzione Event Listener per il tasto "Mi Piace": 
+8-Funzione della milestone 2 per incrementare il numero dei mi piace 
+ 

@@ -105,4 +105,20 @@ posts.forEach(post => {
     container.innerHTML += createPostMarkup(post);
 });
 
- 
+// Milestone 2: Gestione dei like
+const likedPosts = [];
+container.addEventListener('click', function (event) {
+    if (event.target.closest('.js-like-button')) {
+        event.preventDefault();
+        const button = event.target.closest('.js-like-button');
+        const postId = button.getAttribute('data-postid');
+        const likeCounter = document.getElementById(`like-counter-${postId}`);
+
+        if (!likedPosts.includes(postId)) {
+            button.classList.add('like-button--liked');
+            let currentLikes = parseInt(likeCounter.textContent);
+            likeCounter.textContent = currentLikes + 1;
+            likedPosts.push(postId);
+        }
+    }
+});

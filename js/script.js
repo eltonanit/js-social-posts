@@ -99,3 +99,10 @@ function formatDate(dateString) {
     return new Date(dateString).toLocaleDateString('it-IT', options);
 }
 
+// Milestone 1: Stampiamo i post del feed
+const container = document.getElementById('container');
+posts.forEach(post => {
+    container.innerHTML += createPostMarkup(post);
+});
+
+ 
